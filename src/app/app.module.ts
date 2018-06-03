@@ -3,6 +3,7 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
+import {HttpModule} from '@angular/http';
 
 
 import { MDBBootstrapModule } from './../../angular-bootstrap-md';
@@ -33,6 +34,7 @@ const appRoutes: Routes = [
     FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot(appRoutes, { enableTracing: true }),
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent],
