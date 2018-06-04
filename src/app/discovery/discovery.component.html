@@ -6,10 +6,17 @@
   </div>
 
   <div *ngIf = "access_token">
-      <button class="btn btn-dark-green" (click)="fetchTrack();">Fetch track</button>
+      <button class="btn btn-dark-green" (click)="fetchTrack();">Fetch track met ID</button>
+      <input type="text" name="queryString" [(ngModel)]="queryString" placeholder="Zoek artiest op..." (keyup)="searchArtist();">
   </div>
 
   <div *ngIf = "track">
     <h1>Trackname: {{track.name}}</h1>
+  </div>
+
+  <div *ngIf = "artists">
+    <div *ngFor = "let artist of artists"> 
+      {{artist.name}}
+    </div>
   </div>
 </div>>
