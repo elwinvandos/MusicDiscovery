@@ -1,6 +1,13 @@
-<div class="container">
-  <button (click)="fetchTrack();">Fetch track</button>
-  <button (click)="loginSpotify();">Log in</button>
+<div class="container-fluid mt-10">
+
+  <div *ngIf ="!access_token">
+    <h3>Welkom op deze app. Om verdere functionaliteit te kunnen gebruiken moet je eerst met Spotify inloggen.</h3>
+      <button class="btn btn-dark-green loginbutton" (click)="loginSpotify();">Log in</button>
+  </div>
+
+  <div *ngIf = "access_token">
+      <button class="btn btn-dark-green" (click)="fetchTrack();">Fetch track</button>
+  </div>
 
   <div *ngIf = "track">
     <h1>Trackname: {{track.name}}</h1>

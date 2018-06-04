@@ -13,9 +13,13 @@ export class DiscoveryComponent implements OnInit {
   constructor(private api:ApiService) { }
 
   track:Track;
+  access_token:any;
 
   ngOnInit() {
+    this.access_token = this.getAccessToken();
   }
+
+
 
   loginSpotify() {
     var redirect = "http://localhost:4200/discover";
@@ -23,14 +27,11 @@ export class DiscoveryComponent implements OnInit {
   }
 
   fetchTrack() {
-    var access_token = this.getAccessToken();
-    console.log("Access token is: " + access_token);
-
-    if (access_token == null) {
+    if (this.access_token == null) {
       throw new Error ('access_token is null')
     }
     else {
-      this.api.getTrack(access_token, "23cfaVuGWVpwsrX7lqaD3h")
+      this.api.getTrack(this.access_token, "23cfaVuGWVpwsrX7lqaD3h")
         .subscribe(res => {
           this.track = res;
         })
