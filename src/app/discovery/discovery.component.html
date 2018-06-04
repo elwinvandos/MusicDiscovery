@@ -16,7 +16,8 @@
 
   <div *ngIf = "artists">
     <div *ngFor = "let artist of artists"> 
-      {{artist.name}}
+      <a routerLink='/artistpage/{{artist.id}}'>{{artist.name}}</a>
+      Volgende: access token naar pagina passen, artiest info ophalen, tracks bij artiesten laten zien
     </div>
   </div>
 </div>>
