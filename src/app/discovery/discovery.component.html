@@ -1,4 +1,8 @@
 <div class="container">
   <button (click)="fetchTrack();">Fetch track</button>
   <button (click)="loginSpotify();">Log in</button>
+
+  <div *ngIf = "track">
+    <h1>Trackname: {{track.name}}</h1>
+  </div>
 </div>>
