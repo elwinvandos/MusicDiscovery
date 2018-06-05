@@ -20,6 +20,7 @@ export class DiscoveryComponent implements OnInit {
 
   ngOnInit() {
     this.access_token = this.getAccessToken();
+    localStorage.setItem('token', this.access_token);
   }
 
   loginSpotify() {
@@ -48,8 +49,7 @@ export class DiscoveryComponent implements OnInit {
       this.api.getSearch(this.access_token, this.queryString, type)
         .subscribe(res => {
           this.artists = res.artists.items;
-          console.log(this.artists);
-        })
+        });
     } 
   }
 

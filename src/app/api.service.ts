@@ -36,6 +36,23 @@ export class ApiService {
       .pipe(map((res:Response) => res.json()))
   }
 
+  getArtist(access_token:string,artistId:number) {
+    var url = "https://api.spotify.com/v1/artists/" + artistId;
+    let headers = new Headers();
+    headers.append('Authorization', 'Bearer ' + access_token);
+      return this._http.get(url, {headers:headers})
+      .pipe(map((res:Response) => res.json()))
+  }
+
+  //country is vereist voor spotify Top Tracks API
+  getTopTracks(access_token:string,artistId:number,country:string) {
+    var url = "https://api.spotify.com/v1/artists/" + artistId + '/top-tracks?country=' + country;
+    let headers = new Headers();
+    headers.append('Authorization', 'Bearer ' + access_token);
+      return this._http.get(url, {headers:headers})
+      .pipe(map((res:Response) => res.json()))
+  }
+
 }
 
 //client id = 7181ef614e794414af3353f24a97c5e9 

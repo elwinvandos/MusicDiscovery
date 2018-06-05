@@ -1,0 +1,9 @@
+<div class="container-fluid mt-10">
+    <h2>Page of <a href="https://open.spotify.com/artist/{{artist.id}}">{{artist.name}}</a></h2>
+    <br>
+    <h3>Top 10 tracks in België</h3>
+    <div *ngFor = "let track of tracks">
+        {{track.name}}
+    </div>
+</div>
+

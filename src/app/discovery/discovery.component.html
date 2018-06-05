@@ -6,6 +6,7 @@
   </div>
 
   <div *ngIf = "access_token">
+    <h3>Search for your favorite artist and click through to see their profile.</h3>
       <button class="btn btn-dark-green" (click)="fetchTrack();">Fetch track met ID</button>
       <input type="text" name="queryString" [(ngModel)]="queryString" placeholder="Zoek artiest op..." (keyup)="searchArtist();">
   </div>
@@ -17,7 +18,6 @@
   <div *ngIf = "artists">
     <div *ngFor = "let artist of artists"> 
       <a routerLink='/artistpage/{{artist.id}}'>{{artist.name}}</a>
-      Volgende: access token naar pagina passen, artiest info ophalen, tracks bij artiesten laten zien
     </div>
   </div>
 </div>>
