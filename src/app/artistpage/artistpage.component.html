@@ -2,8 +2,9 @@
     <h2>Page of <a href="https://open.spotify.com/artist/{{artist.id}}">{{artist.name}}</a></h2>
     <br>
     <h3>Top 10 tracks in België</h3>
-    <div *ngFor = "let track of tracks">
+    <div *ngFor = "let track of tracks" class="tracklisting">
         {{track.name}}
+        <a href="{{track.external_urls.spotify}}" class="listentrack" target="_blank">Beluister Nummer</a>
     </div>
 </div>
 
