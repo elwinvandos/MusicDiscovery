@@ -1,0 +1,11 @@
+C:\Users\Xari\Dropbox\School\CloudAPIs\MusicDisc\MusicDiscAPI\bin\Debug\netcoreapp2.0\MusicDiscAPI.deps.json
+C:\Users\Xari\Dropbox\School\CloudAPIs\MusicDisc\MusicDiscAPI\bin\Debug\netcoreapp2.0\MusicDiscAPI.runtimeconfig.json
+C:\Users\Xari\Dropbox\School\CloudAPIs\MusicDisc\MusicDiscAPI\bin\Debug\netcoreapp2.0\MusicDiscAPI.runtimeconfig.dev.json
+C:\Users\Xari\Dropbox\School\CloudAPIs\MusicDisc\MusicDiscAPI\bin\Debug\netcoreapp2.0\MusicDiscAPI.dll
+C:\Users\Xari\Dropbox\School\CloudAPIs\MusicDisc\MusicDiscAPI\bin\Debug\netcoreapp2.0\MusicDiscAPI.pdb
+C:\Users\Xari\Dropbox\School\CloudAPIs\MusicDisc\MusicDiscAPI\obj\Debug\netcoreapp2.0\MusicDiscAPI.csprojResolveAssemblyReference.cache
+C:\Users\Xari\Dropbox\School\CloudAPIs\MusicDisc\MusicDiscAPI\obj\Debug\netcoreapp2.0\MusicDiscAPI.csproj.CoreCompileInputs.cache
+C:\Users\Xari\Dropbox\School\CloudAPIs\MusicDisc\MusicDiscAPI\obj\Debug\netcoreapp2.0\MusicDiscAPI.AssemblyInfoInputs.cache
+C:\Users\Xari\Dropbox\School\CloudAPIs\MusicDisc\MusicDiscAPI\obj\Debug\netcoreapp2.0\MusicDiscAPI.AssemblyInfo.cs
+C:\Users\Xari\Dropbox\School\CloudAPIs\MusicDisc\MusicDiscAPI\obj\Debug\netcoreapp2.0\MusicDiscAPI.dll
+C:\Users\Xari\Dropbox\School\CloudAPIs\MusicDisc\MusicDiscAPI\obj\Debug\netcoreapp2.0\MusicDiscAPI.pdb

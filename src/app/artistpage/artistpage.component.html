@@ -4,7 +4,10 @@
     <h3>Top 10 tracks in België</h3>
     <div *ngFor = "let track of tracks" class="tracklisting">
         {{track.name}}
-        <a href="{{track.external_urls.spotify}}" class="listentrack" target="_blank">Beluister Nummer</a>
+        <div class="tracklinks">
+            <a href="{{track.external_urls.spotify}}"  target="_blank">Beluister Nummer</a>
+            <button (click)="addTrack(track);" class="btn btn-outline-dark-green btn-sm addlink" [disabled]="track.hasBeenAdded">Voeg Toe</button>
+        </div>
     </div>
 </div>
 

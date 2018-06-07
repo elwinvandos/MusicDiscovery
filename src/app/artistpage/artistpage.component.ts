@@ -3,6 +3,7 @@ import  {ActivatedRoute } from '@angular/router';
 import { ApiService } from '../api.service';
 import { Artist } from '../models/Artist';
 import { Track } from '../models/Track';
+import { DiscoveryAPIService } from '../discovery-api.service';
 
 @Component({
   selector: 'app-artistpage',
@@ -11,7 +12,7 @@ import { Track } from '../models/Track';
 })
 export class ArtistpageComponent implements OnInit {
 
-  constructor(private api:ApiService, private route:ActivatedRoute) { }
+  constructor(private api:ApiService, private route:ActivatedRoute, private discovery_api:DiscoveryAPIService) { }
 
   access_token:any;
   artistId: number;
@@ -32,6 +33,13 @@ export class ArtistpageComponent implements OnInit {
       .subscribe(res => {
         this.tracks = res.tracks;
       });
+  }
+
+  addTrack(track:Track) {
+    this.discovery_api.postTrack(track).subscribe(res => {
+      console.log(res);
+    })
+    track.hasBeenAdded = true;
   }
 
 }

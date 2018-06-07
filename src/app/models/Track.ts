@@ -17,5 +17,15 @@ export class Track {
     public set name(v : string) {
         this._name = v;
     }
+
+    
+    private _hasBeenAdded : boolean;
+    public get hasBeenAdded() : boolean {
+        return this._hasBeenAdded;
+    }
+    public set hasBeenAdded(v : boolean) {
+        this._hasBeenAdded = v;
+    }
+    
     
 }
